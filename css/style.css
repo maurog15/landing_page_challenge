@@ -99,3 +99,46 @@ ion-icon:hover {
     border-color: hsl(300, 69%, 71%);;
 }
 
+/* Responsive design */
+@media only screen and (max-width: 475px) {
+    body {
+    background-image: url(../images/bg-mobile.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-container img {
+        max-width: 100%;
+        margin-top: 40px;
+    }
+
+    .right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+    .right-container h1 {
+        font-size: 25px;
+    }
+
+    button {
+        padding: 13px 100px;
+        margin-bottom: 70px;
+    }
+
+    .social {
+        align-self: center;
+    }
+
+    footer {
+      padding-bottom: 30px;
+    }
+}
